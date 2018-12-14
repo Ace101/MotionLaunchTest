@@ -159,7 +159,9 @@ public class BiometricPromptDialog extends DialogFragment {
                 mStateTv.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        dismiss();
+                        if (getDialog() != null) {
+                            dismiss();
+                        }
                     }
                 }, 500);
                 break;
