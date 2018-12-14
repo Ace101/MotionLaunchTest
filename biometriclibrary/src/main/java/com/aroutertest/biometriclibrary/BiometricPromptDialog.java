@@ -75,8 +75,9 @@ public class BiometricPromptDialog extends DialogFragment {
                 if (mDialogActionCallback != null) {
                     mDialogActionCallback.onUsePassword();
                 }
-
-                dismiss();
+                if (getDialog() != null) {
+                    dismiss();
+                }
             }
         });
         mCancelBtn.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +86,9 @@ public class BiometricPromptDialog extends DialogFragment {
                 if (mDialogActionCallback != null) {
                     mDialogActionCallback.onCancel();
                 }
-                dismiss();
+                if (getDialog() != null) {
+                    dismiss();
+                }
             }
         });
         return view;
