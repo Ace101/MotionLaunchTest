@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wangnan.library.GestureLockView
+        android:id="@+id/rl_motion"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:normal_color="#F46F21"
+        app:press_color="#F46F21"
+        app:error_color="#c0c0c0"
+        app:is_use_vibrate="true"
+        app:is_use_animation="true"
+        app:animation_duration="500"
+        app:animation_scale_mode="reverse"
+        app:animation_scale_rate="2">
+    </com.wangnan.library.GestureLockView>
+</FrameLayout>
